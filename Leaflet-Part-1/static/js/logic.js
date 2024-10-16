@@ -49,18 +49,15 @@ function createEarthquakeMarkers(data) {
         onEachFeature: onEachFeature,
         pointToLayer: createCircles
     }).addTo(myMap);
-
-
 }
 
 // Call API for GeoJSON data and call the createMarkers function to populate markers onto the map
 d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson").then(createEarthquakeMarkers);
 
-
 // Create a layer for the legend, positioned at the bottom right of the map
 let legend = L.control({ position: "bottomright" });
 
-// Determines style and format of the legend layer upon adding it to the map
+// Creates a formatted div for the legend layer when it is added to the map
 legend.onAdd = function() {
     let div = L.DomUtil.create("div", "legend"); // Creates a new div to hold the legend
     div.innerHTML = "<h4>Depth</h4>" // Set legend title
