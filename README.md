@@ -1,7 +1,7 @@
 # leaflet-challenge
 # LeafletChallenge
 
-A static map and interactive map built visualizing the occurence of earthquakes and their attributes as per data from the United States Geological Survey (USGS)
+A semi-static map and interactive map built visualizing the occurence of earthquakes and their attributes as per data from the United States Geological Survey (USGS)
 
 ## Description
 
