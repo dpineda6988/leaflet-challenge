@@ -51,7 +51,7 @@ function createEarthquakeMarkers(data) {
     }).addTo(myMap);
 }
 
-// Call API for GeoJSON data and call the createMarkers function to populate markers onto the map
+// Call API for GeoJSON data for earthquakes from the past 7 days and call the createMarkers function to populate markers onto the map
 d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson").then(createEarthquakeMarkers);
 
 // Create a layer for the legend, positioned at the bottom right of the map

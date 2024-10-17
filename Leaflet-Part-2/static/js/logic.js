@@ -121,7 +121,7 @@ function buildMap(earthquakeOverlay, tectonicOverlay) {
 
 };
 
-// Call API for GeoJSON data and then call the createMarkers function to create the overlay of earthquake markers
+// Call API for GeoJSON data for earthquakes from the past 7 days and then call the createMarkers function to create the overlay of earthquake markers
 // and start the chain of functions that ultimately create the final map to be displayed
 d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson").then(createEarthquakeMarkers);
 
